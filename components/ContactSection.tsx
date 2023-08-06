@@ -4,8 +4,8 @@ import React from "react";
 import { AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
 
 const ContactSection = () => {
-  const receiverEmail = "kavishkabingun99@gmail.com";
-  const phoneNumber = "+94704584332";
+  const receiverEmail = "kavishkabingun99@gmail.com";//email
+  const phoneNumber = "+94704584332";//phone
 
   const handleEmailClick = () => {
     window.location.href = `mailto:${receiverEmail}`;
