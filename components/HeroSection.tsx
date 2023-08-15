@@ -13,12 +13,21 @@ import {
 
 
 const HeroSection = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+  const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 767);
   };
-  window.addEventListener('resize', handleResize);
+
+  useEffect(() => {
+    handleResize(); // Set the initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      // Clean up the event listener when the component unmounts
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   
   
   return (
@@ -40,7 +49,7 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            from Sri Lanka, driven by a passion to create magical software that brings ease and joy to people's lives.
+            from Sri Lanka, driven by a passion to create magical software that brings ease and joy to people&apos;s lives.
           </p>
           <div className={`flex flex-row items-center ${isMobile ? 'justify-center' : 'justify-start'} space-x-2 mb-1`}>
       <a href="https://github.com/KavishkaBingun" rel="noreferrer" target="_blank">

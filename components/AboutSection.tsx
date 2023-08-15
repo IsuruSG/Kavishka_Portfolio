@@ -42,7 +42,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-            I'm all about pushing boundaries and creating awesome websites, 
+            I am all about pushing boundaries and creating awesome websites, 
             smooth MERN stack projects, Java solutions, and impactful mobile apps.
             </p>
             <br />
@@ -59,7 +59,7 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-            I'm always learning, dreaming big, and committed to making a difference.
+            I am always learning, dreaming big, and committed to making a difference.
              Join me on this incredible journey as we leave a mark in the world of 
              software engineering and shape the future of technology together.
             </p>
